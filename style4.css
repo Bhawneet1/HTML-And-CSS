@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+#box1{
+    height:200px;
+    width: 200px;
+    background-color: crimson;
+    border: 2px solid #fff;
+    /* saare element move ho jaege par hamne sirf ek move karna hai
+    margin-top: 20px; */
+    position: absolute;
+    /* absolute sai upar uth jaega aur iski jagha iske neeche walla agai move ho jaega */
+    /* left: 30%;
+    top:40%; */
+    /* wrt to screen */
+    /* right:0;
+    top:0; */
+    top:50%;
+    left:50%;
+    /* the top left corner will be at center not the div */
+    /* to phir center ke respect mai move karne kai leya */
+    /* we use translate */
+    transform: translate(-50%,-50%);
+    /* z-index jada matlab wo upar rahega */
+    z-index: 9;
+}
+#box2{
+    height: 200px;
+    width:200px;
+    background-color: royalblue;
+    border: 2px solid #fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+}
